@@ -5,18 +5,22 @@ $palette: (
 	light: (
 		1: #ECEDED,
 		2: #9CA9B3,
-		3: #717D86
+		3: #717D86,
+		4: #f7f1e3
 	),
 	dark: (
 		1: #151719,
 		2: #25282C,
-		3: #33363A
+		3: #33363A,
+		4: #37405b,
+		5 :#34495e
 	),
 	primary: (
-		1: #6163FF,
+		1: #6a89cc,
 		2: #ACADFF,
-		3: #5658DD,
-		4: #E9E9FF
+		3: #414860ff,
+		4: #ffd3bbff,
+		5: #0a3d62
  	),
 	secondary: (
 		1: #24E5AF,
@@ -33,8 +37,8 @@ $palette: (
 
 // Base typography: color
 $color: (
-	heading:				get-color(light, 1),
-	base: 					get-color(light, 2),
+	heading:				get-color(dark, 5),
+	base: 					get-color(light, 3),
 	high-contrast: 			get-color(light, 1),
 	mid-contrast: 			get-color(light, 2),
 	low-contrast: 			get-color(light, 3),
@@ -78,7 +82,7 @@ $bg--color: (
 	body: 			get-color(light, 1),
 	body-shadow:	0 20px 48px rgba(get-color(dark, 1), .8),	// body shadow when a boxed layout is used (set to null if don't want a shadow)
 	body-outer:		lighten(get-color(dark, 1), 2%),			// outer bg color when a boxed layout is used
-	bg-color: 		lighten(get-color(light, 1), 9%),			// .has-bg-color helper class
+	bg-color: 		lighten(get-color(dark, 1), 9%),			// .has-bg-color helper class
 	shadow: 		0 24px 64px rgba(get-color(dark, 1), .64),	// .has-shadow helper class
 	code: 			darken(get-color(dark, 1), 3%),
 	code-inverse:	darken(get-color(dark, 1), 3%)
