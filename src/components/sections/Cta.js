@@ -52,8 +52,8 @@ const Cta = ({
           className={innerClasses}
         >
           <div className="cta-slogan">
-            <h3 className="m-0">
-              Let us your email for further contact
+            <h3 className="m-0 text_email" >
+              Let us your email to get updates
               </h3>
           </div>
           <div className="cta-action">
