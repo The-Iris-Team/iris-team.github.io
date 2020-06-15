@@ -1,6 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
+import ScrollableAnchor from 'react-scrollable-anchor'
 import { Link } from 'react-router-dom';
+import { goToAnchor } from 'react-scrollable-anchor'
 
 const FooterNav = ({
   className,
@@ -22,13 +24,7 @@ const FooterNav = ({
           <Link to="#0">Contact</Link>
         </li>
         <li>
-          <Link to="#0">About us</Link>
-        </li>
-        <li>
-          <Link to="#0">FAQ's</Link>
-        </li>
-        <li>
-          <Link to="#0">Support</Link>
+         <a href='#about_us' onClick="goToAnchor('about_us')"> About us </a>
         </li>
       </ul>
     </nav>
