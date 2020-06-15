@@ -108,10 +108,10 @@ const FeaturesTiles = ({
                         Marin Duroyon
                         </h4>
                       <p className="m-0 text-sm">
-                        Marin is French and American, he spent a major part of his education in an international school in Paris.
+                        Marin is French and American, since his youngest age, he has been dedicating his free time in projects to find solutions to concrete problems.
 					    Passionate by cybersecurity, skateboard and programming, Marin never cesses to fight for democracy, freedom and privacy during events such as 'Hack The Hague' in 2019, an annual hackathon.
 					    He is currently studying the digital system variant of his bachelor.
-                        </p>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -137,8 +137,8 @@ const FeaturesTiles = ({
                         </h4>
                       <p className="m-0 text-sm">
 					    Alexandra is originally from Belgium where she lived and studied until she was 16 years old. 
-					    She never ceases to evolve throughout her Bachelor with her various activities such as her honor's program, research projects, teaching assistant experience and much more. 
-					    Her motivation and unmatched organization leads her to a growing interest in Blockchain. She is currently studying the data variant of her bachelor.
+					    She never ceases to evolve throughout her Bachelor with her various activities such as her honor's program, teaching assistant experience and much more. 
+					    She his now specializing in data science while doing research related to blockchain and data privacy.
                         </p>
                     </div>
                   </div>
@@ -160,14 +160,13 @@ const FeaturesTiles = ({
                         Jean Gal
                         </h4>
                       <p className="m-0 text-sm">
-                        Jean comes from France but he lived in various countries such as India, Thailand and Morocco during his childhood. 
-					    Impassioned by sports and more spefically rugby, Jean is driven by his open-mindedness, determination and team-spirit acquired during international sport competitions, scouting, etc.
-					    He his currently studying the data variant of his bachelor.
+                        Jean comes from France but he grew up abroad in countries such as India, Thailand and Morocco immersed in various cultures. 
+					    Impassioned by sports, Jean is driven by his open-mindedness, determination and team-spirit acquired during international sport competitions and while organizing charity events.
+					    He his now specializing in data science.
                         </p>
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
