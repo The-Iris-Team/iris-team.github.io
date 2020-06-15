@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -117,7 +118,7 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="#contact" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Contact us</Link>
+                          <AnchorLink  onClick={closeMenu} href="#contact" className="button button-wide-mobile button-sm" > Contact us</AnchorLink>
                       </li>
                     </ul>}
                 </div>

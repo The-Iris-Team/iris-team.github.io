@@ -83,7 +83,6 @@ const FeaturesTiles = ({
                       <p className="m-0 text-sm">
 					    Dani is Dutch and Lebanese, he lived in many places around the world such as Paris, Dubai and Delft and graduated with an International Baccalaureate.
 					    Defined mostly by his internationalism, his musical and social skills and his ability to adapt to various situations, Dani is constantly seeking to learn more. 
-					    He his now specializing in data science.
                         </p>
                     </div>
                   </div>
@@ -106,8 +105,7 @@ const FeaturesTiles = ({
                         </h4>
                       <p className="m-0 text-sm">
               Marin is French and American, since his youngest age, he has been dedicating his free time in projects to find solutions to concrete problems.
-					    Passionate by cybersecurity, skateboard and programming, Marin never cesses to fight for democracy, freedom and privacy during events such as 'Hack The Hague' in 2019, an annual hackathon.
-              He his now specializing in digital system.
+					    Passionate by cybersecurity, skateboard and programming, Marin never cesses to fight for democracy, freedom and privacy.
                       </p>
                     </div>
                   </div>
@@ -133,9 +131,9 @@ const FeaturesTiles = ({
                         Alexandra Feldman
                         </h4>
                       <p className="m-0 text-sm">
-					    Alexandra is originally from Belgium where she lived and studied until she was 16 years old. 
-					    She never ceases to evolve throughout her Bachelor with her various activities such as her honor's program, teaching assistant experience and much more. 
-					    She his now specializing in data science while doing research related to blockchain and data privacy.
+					    Alexandra is originally from Belgium where she studied until she was 16 years old. 
+					    She is deeply involved in academic activities, conducting research related to blockchain and data privacy.
+              Starting at an early age, she has been leading projects aiming to solve ecology and societal-related issues.
                         </p>
                     </div>
                   </div>

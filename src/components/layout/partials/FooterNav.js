@@ -1,8 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
-import ScrollableAnchor from 'react-scrollable-anchor'
 import { Link } from 'react-router-dom';
-import { goToAnchor } from 'react-scrollable-anchor'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const FooterNav = ({
   className,
@@ -21,10 +20,10 @@ const FooterNav = ({
     >
       <ul className="list-reset">
         <li>
-          <Link to="#0">Contact</Link>
+          <AnchorLink href="#contact">Contact</AnchorLink>
         </li>
         <li>
-         <a href='#about_us' onClick="goToAnchor('about_us')"> About us </a>
+         <AnchorLink href='#about_us'> About us </AnchorLink>
         </li>
       </ul>
     </nav>
