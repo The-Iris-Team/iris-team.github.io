@@ -124,7 +124,7 @@ const FeaturesSplit = ({
                   Improve the news ecosystem
                   </h3>
                 <p className="m-0">
-                  Verify uncertain information that needs to be fact-checked. On Iris, you can participate in detecting the fake-news and get compensated for that. 
+                  Verify uncertain information that needs to be fact-checked. On Iris, you can participate in detecting the fake-news and get a remuneration. 
                 </p>
               </div>
               <div className={
