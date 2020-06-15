@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-import ScrollableAnchor from 'react-scrollable-anchor'
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
@@ -60,9 +59,7 @@ const FeaturesTiles = ({
       >
           <div className="container">
               <div className={innerClasses}>
-                  <ScrollableAnchor id={'about_us'}>
-                      <SectionHeader data={sectionHeader} className="center-content" />
-                  </ScrollableAnchor>
+                      <SectionHeader id='about_us' data={sectionHeader} className="center-content" />
               <div className={tilesClasses}>
 
                 <div className="tiles-item reveal-from-bottom">

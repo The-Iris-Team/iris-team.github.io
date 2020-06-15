@@ -57,8 +57,7 @@ const Hero = ({
     >
       <div className="container-sm">
         <div className={innerClasses}>
-          <ScrollableAnchor id={'top'}>
-          <div className="hero-content">
+          <div id='top' className="hero-content">
             <h1 className="mt-0 mb-8 reveal-from-bottom" data-reveal-delay="200">
               <span className="text-color-primary">IRIS</span>
             </h1>
