@@ -105,7 +105,7 @@ const FeaturesTiles = ({
                         </h4>
                       <p className="m-0 text-sm">
               Marin is French and American, since his youngest age, he has been dedicating his free time in projects to find solutions to concrete problems.
-					    Passionate by cybersecurity, skateboard and programming, Marin never cesses to fight for democracy, freedom and privacy.
+					    Passionated by cybersecurity, skateboard and programming, Marin never ceases to fight for democracy, freedom and privacy.
                       </p>
                     </div>
                   </div>

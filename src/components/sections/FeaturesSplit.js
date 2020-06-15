@@ -69,10 +69,10 @@ const FeaturesSplit = ({
                     Become a writer
                   </div>
                 <h3 className="mt-0 mb-12">
-                    Publish what you witness  
+                    Write about what you witness  
                   </h3>
                 <p className="m-0">
-                  On the Iris platform, anyone can publish information which will be published if it meets the standard requirements of an article. The information to be fact-checked will be highlighted and verified by the community.              
+                  On the Iris platform, anyone can submit articles which will be published if it meets the standard format requirements. The pieces of information in the article that are highlighted by the algorithm as potentially fake news will be verified by the community.
                 </p>
               </div>
               <div className={
