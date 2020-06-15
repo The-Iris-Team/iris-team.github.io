@@ -60,11 +60,11 @@ const Hero = ({
       <div className="container-sm">
         <div className={innerClasses}>
           <div className="hero-content">
-            <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              <span className="text-color-primary">Iris</span>
+            <h1 className="mt-0 mb-8 reveal-from-bottom" data-reveal-delay="200">
+              <span className="text-color-primary">IRIS</span>
             </h1>
           <div className="container-xs">
-              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
+              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="350">
                 In truth, we trive.
                 </p>
           {/*<div className="reveal-from-bottom" data-reveal-delay="600">
