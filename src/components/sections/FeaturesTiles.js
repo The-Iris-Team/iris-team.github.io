@@ -1,7 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
 import ScrollableAnchor from 'react-scrollable-anchor'
-import { configureAnchors } from 'react-scrollable-anchor'
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
@@ -53,8 +52,6 @@ const FeaturesTiles = ({
 	" We are determined, motivated, open-minded and we strongly believe that we can make a difference."
   };
 
-    configureAnchors({ offset: 0, scrollDuration: 800 })
-
   return (
     <section
       {...props}
@@ -73,10 +70,10 @@ const FeaturesTiles = ({
                     <div className="features-tiles-item-header">
                       <div className="features-tiles-item-image mb-16">
                         <Image
-                          src={require('./../../assets/images/feature-tile-icon-01.svg')}
-                          alt="Features tile icon 01"
-                          width={64}
-                          height={64} />
+                          src={require('./../../assets/images/dani-pic.png')}
+                          alt="Dani Rogmans"
+                          width={86}
+                          height={86} />
                       </div>
                     </div>
                     <div className="features-tiles-item-content">
@@ -84,9 +81,9 @@ const FeaturesTiles = ({
                         Dani Rogmans
                         </h4>
                       <p className="m-0 text-sm">
-					    Dani is Dutch and Lebanese, he lived in many places around the world such as Paris, Dubai and Delft and graduated from an International Baccalaureate.
+					    Dani is Dutch and Lebanese, he lived in many places around the world such as Paris, Dubai and Delft and graduated with an International Baccalaureate.
 					    Defined mostly by his internationalism, his musical and social skills and his ability to adapt to various situations, Dani is constantly seeking to learn more. 
-					    He is currently studying the data variant of his bachelor.
+					    He his now specializing in data science.
                         </p>
                     </div>
                   </div>
@@ -97,10 +94,10 @@ const FeaturesTiles = ({
                     <div className="features-tiles-item-header">
                       <div className="features-tiles-item-image mb-16">
                         <Image
-                          src={require('./../../assets/images/feature-tile-icon-06.svg')}
+                          src={require('./../../assets/images/marin-pic.png')}
                           alt="Features tile icon 06"
-                          width={64}
-                          height={64} />
+                          width={86}
+                          height={86} />
                       </div>
                     </div>
                     <div className="features-tiles-item-content">
@@ -108,9 +105,9 @@ const FeaturesTiles = ({
                         Marin Duroyon
                         </h4>
                       <p className="m-0 text-sm">
-                        Marin is French and American, since his youngest age, he has been dedicating his free time in projects to find solutions to concrete problems.
+              Marin is French and American, since his youngest age, he has been dedicating his free time in projects to find solutions to concrete problems.
 					    Passionate by cybersecurity, skateboard and programming, Marin never cesses to fight for democracy, freedom and privacy during events such as 'Hack The Hague' in 2019, an annual hackathon.
-					    He is currently studying the digital system variant of his bachelor.
+              He his now specializing in digital system.
                       </p>
                     </div>
                   </div>
@@ -125,10 +122,10 @@ const FeaturesTiles = ({
                     <div className="features-tiles-item-header">
                       <div className="features-tiles-item-image mb-16">
                         <Image
-                          src={require('./../../assets/images/feature-tile-icon-01.svg')}
+                          src={require('./../../assets/images/alex-pic.png')}
                           alt="Features tile icon 01"
-                          width={64}
-                          height={64} />
+                          width={86}
+                          height={86} />
                       </div>
                     </div>
                     <div className="features-tiles-item-content">
@@ -149,10 +146,10 @@ const FeaturesTiles = ({
                     <div className="features-tiles-item-header">
                       <div className="features-tiles-item-image mb-16">
                         <Image
-                          src={require('./../../assets/images/feature-tile-icon-06.svg')}
+                          src={require('./../../assets/images/jean-pic.png')}
                           alt="Features tile icon 06"
-                          width={64}
-                          height={64} />
+                          width={86}
+                          height={86} />
                       </div>
                     </div>
                     <div className="features-tiles-item-content">
