@@ -19,13 +19,11 @@ const Logo = ({
       className={classes}
     >
       <h1 className="m-0">
-        <Link onClick={goToTop}>
           <Image
             src={require('./../../../assets/images/logo_1000.png')}
             alt="Open"
             width={64}
             height={64} />
-        </Link>
       </h1>
     </div>
   );
