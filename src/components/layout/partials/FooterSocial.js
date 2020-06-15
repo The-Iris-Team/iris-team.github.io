@@ -18,7 +18,7 @@ const FooterSocial = ({
     >
       <ul className="list-reset">
         <li>
-          <a href="https://twitter.com/">
+          <a href="https://twitter.com/iris_media_off">
             <svg
               width="16"
               height="16"
