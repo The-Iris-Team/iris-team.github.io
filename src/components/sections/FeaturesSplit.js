@@ -66,14 +66,14 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                    Become a writer
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                    Publish what you witness  
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  On the Iris platform, anyone can publish information which will be published if it meets the standard requirements of an article. The information to be fact-checked will be highlighted and verified by the community.              
+                </p>
               </div>
               <div className={
                 classNames(
@@ -92,15 +92,15 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
+                  Become a reader
+                </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  Read censor-free news       
+                </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-              </div>
+                On Iris, you can read articles written by any publisher. On the news timeline, you can access articles related to your center of interests from diverse publishers. Readers can show they like an article by donating to the publisher.                 
+                 </p>
+                </div>
               <div className={
                 classNames(
                   'split-item-image center-content-mobile reveal-from-bottom',
@@ -118,14 +118,14 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                  Become a corrector
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                  Improve the news ecosystem
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  Verify uncertain information that needs to be fact-checked. On Iris, you can participate in detecting the fake-news and get compensated for that. 
+                </p>
               </div>
               <div className={
                 classNames(
