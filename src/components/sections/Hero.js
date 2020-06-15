@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
-import ScrollableAnchor from 'react-scrollable-anchor'
 import { SectionProps } from '../../utils/SectionProps';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
