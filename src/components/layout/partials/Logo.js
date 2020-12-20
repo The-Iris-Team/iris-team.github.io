@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Image from '../../elements/Image';
-import ScrollableAnchor, { goToTop } from 'react-scrollable-anchor'
+import { goToTop } from 'react-scrollable-anchor'
 
 const Logo = ({
   className,
@@ -20,13 +20,13 @@ const Logo = ({
       className={classes}
     >
       <h1 className="m-0">
-        <Link onClick={goToTop}>
+        <AnchorLink href="#top">
           <Image
             src={require('./../../../assets/images/logo_1000.png')}
             alt="Open"
             width={64}
             height={64} />
-        </Link>
+        </AnchorLink>
       </h1>
     </div>
   );
