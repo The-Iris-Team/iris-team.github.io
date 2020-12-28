@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import Input from '../elements/Input';
+import firebase from 'firebase/app';
+import 'firebase/firestore'
 
 const propTypes = {
   ...SectionProps.types,
@@ -41,11 +43,20 @@ const Cta = ({
     bottomDivider && 'has-bottom-divider',
     split && 'cta-split'
   );  
-  
+
+  var firestore = firebase.firestore();
+
   function call_data(txt) { 
-    console.log(txt);
+    firestore.collection("emails").add({
+      Email: "bloublou@gmail.com"
+    }).then(function() {
+      console.log(txt);
+    }).catch(function(error) {
+      console.log("There was en error: ", error);
+    })
   };
-  
+
+
   return (
     <section
       {...props}
