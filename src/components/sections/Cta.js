@@ -47,15 +47,24 @@ const Cta = ({
   var firestore = firebase.firestore();
 
   function call_data(txt) { 
-    firestore.collection("emails").add({
-      Email: "bloublou@gmail.com"
-    }).then(function() {
-      console.log(txt);
-    }).catch(function(error) {
-      console.log("There was en error: ", error);
-    })
+    if (validate_email(txt)) {
+      document.getElementById('newsletter').value = ''; //empty the cell because data 
+      firestore.collection("emails").add({
+        Email: txt
+      }).then(function() {
+        console.log(txt);
+      }).catch(function(error) {
+        console.log("There was en error: ", error);
+      })
+    } else {
+      console.log("The email you provided is not valid")
+    }
   };
 
+  function validate_email(mail) {
+    const expression = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return expression.test(String(mail).toLowerCase());
+  };
 
   return (
     <section
