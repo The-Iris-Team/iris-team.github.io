@@ -45,8 +45,11 @@ const Cta = ({
   );  
 
   var firestore = firebase.firestore();
+  var validator = require("email-validator");
 
-  function call_data(txt) { 
+  function call_data() { 
+    console.log("mon ami");
+    var txt = document.getElementById('newsletter').value;
     if (validate_email(txt)) {
       document.getElementById('newsletter').value = ''; //empty the cell because data 
       firestore.collection("emails").add({
@@ -57,13 +60,14 @@ const Cta = ({
         console.log("There was en error: ", error);
       })
     } else {
+      document.getElementById('newsletter').style.color = "red";
       console.log("The email you provided is not valid")
     }
   };
 
   function validate_email(mail) {
     const expression = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return expression.test(String(mail).toLowerCase());
+    return expression.test(String(mail).toLowerCase()) && validator.validate(mail);
   };
 
   return (
@@ -77,21 +81,48 @@ const Cta = ({
         >
           <div className="cta-slogan">
             <h3 className="m-0 text_email" >
-              Join our newsletter and keep updated !
+              Join our newsletter and stay updated !
              </h3>
           </div>
-          <div className="cta-action">
-            <Input id="newsletter" type="email" labelHidden hasIcon="right" placeholder="Your email" onKeyPress={
+          <div style={{display:'inline-flex'}} className="cta-action">
+            <Input id="newsletter" type="email" placeholder="Your email" style={{display:'inline-block'}} onKeyPress={
               (e) => {
                 var keycode = (e.keyCode ? e.keyCode : e.which);
+                if (document.getElementById('newsletter').style.color == "red") {
+                  console.log("voici");
+                  document.getElementById('newsletter').style.color = "black";
+                }
                 if (keycode == '13') { 
                   call_data(document.getElementById('newsletter').value);
                 }
-              }}>
-              <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#376DF9" />
-              </svg>
-            </Input>
+              }} onSubmit = {
+                (e) => {
+                  document.getElementById('newsletter').style.color = "black";
+                }
+              } onKeyDown = {(e) => {
+                document.getElementById('newsletter').style.color = "black";
+              }}
+            >
+              </Input>
+              <form style={{display:'inline-block'}} >
+                <button style={{
+                  backgroudColor:'transparant', 
+                  height:'100%', 
+                  borderWidth:0,
+                  borderTopRightRadius:'2px',
+                  borderBottomRightRadius:'2px',
+                  cursor:'pointer'
+                  }}
+                  onClick= {(e) => {
+                    e.preventDefault();
+                    call_data();
+                  }}
+                  >
+                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#376DF9" />
+                    </svg> 
+                </button>
+              </form>
           </div>
         </div>
       </div>

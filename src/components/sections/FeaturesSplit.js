@@ -64,32 +64,6 @@ const FeaturesSplit = ({
           <div className={splitClasses}>
 
             <div className="split-item">
-              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                    Become a writer
-                  </div>
-                <h3 className="mt-0 mb-12">
-                    Write about what you witness  
-                  </h3>
-                <p className="m-0">
-                  On the Iris platform, anyone can submit articles which will be published if it meets the standard format requirements. The pieces of information in the article that are highlighted by the algorithm as potentially fake news will be verified by the community.
-                </p>
-              </div>
-              <div className={
-                classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill'
-                )}
-                data-reveal-container=".split-item">
-                <Image
-                  src={require('./../../assets/images/features-split-image-01.png')}
-                  alt="Features split 01"
-                  width={528}
-                  height={396} />
-              </div>
-            </div>
-
-            <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Become a reader
@@ -98,9 +72,9 @@ const FeaturesSplit = ({
                   Read censor-free news       
                 </h3>
                 <p className="m-0">
-                On Iris, you can read articles written by any publisher. On the news timeline, you can access articles related to your center of interests from diverse publishers. Readers can show they like an article by donating to the publisher.                 
-                 </p>
-                </div>
+                Read and enjoy collaborative fact-checked articles freely with no limit. Reading articles on our platform makes you less sensible to fake news and assists you into defining your own beliefs. We help you to always stay aware of the information that you encounter.                 
+                </p>
+              </div>
               <div className={
                 classNames(
                   'split-item-image center-content-mobile reveal-from-bottom',
@@ -118,13 +92,39 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                    Become a writer
+                  </div>
+                <h3 className="mt-0 mb-12">
+                  Write about what you witness  
+                </h3>
+                <p className="m-0">
+                  On the Iris platform, anyone can become a publisher. Share what you witness with the rest of the community by writing articles and participate in rebuilding trust in the media. Join us in our mission to leave a genuine impact in this post-truth era.
+                </p>
+              </div>
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../assets/images/features-split-image-01.png')}
+                  alt="Features split 01"
+                  width={528}
+                  height={396} />
+              </div>
+            </div>
+
+            <div className="split-item">
+              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Become a corrector
                   </div>
                 <h3 className="mt-0 mb-12">
                   Improve the news ecosystem
                   </h3>
                 <p className="m-0">
-                  Verify uncertain information that needs to be fact-checked. On Iris, you can participate in detecting the fake-news and get compensated for that. 
+                On Iris, you can participate in detecting fake-news by cooperating with the community and promoting attentiveness. Express yourself and serve everyone while you share your opinion on the information promoted in published articles.
                 </p>
               </div>
               <div className={

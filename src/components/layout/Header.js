@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
@@ -78,6 +77,7 @@ const Header = ({
   return (
     <header
       {...props}
+      id={'top'}
       className={classes}
     >
       <div className="container">
@@ -118,7 +118,7 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                          <AnchorLink  onClick={closeMenu} href="#contact" className="button button-wide-mobile button-sm" > Contact us</AnchorLink>
+                        <AnchorLink  onClick={closeMenu} href="#contact" className="button button-wide-mobile button-sm" > Contact us</AnchorLink>
                       </li>
                     </ul>}
                 </div>
