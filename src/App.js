@@ -3,6 +3,7 @@ import { useLocation, Switch } from 'react-router-dom';
 import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
+import firebase from 'firebase/app'
 
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
@@ -17,6 +18,19 @@ const trackPage = page => {
   ReactGA.set({ page });
   ReactGA.pageview(page);
 };
+
+const config = {
+  apiKey: "AIzaSyB12gx50PXPQqsveSyj6_9gBIyaB_HZi58",
+  authDomain: "iris-newsletter.firebaseapp.com",
+  databaseURL: "https://iris-newsletter-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "iris-newsletter",
+  storageBucket: "iris-newsletter.appspot.com",
+  messagingSenderId: "854798223584",
+  appId: "1:854798223584:web:90098b3cdc0b40da2da885",
+  measurementId: "G-4L7HKJG4FR"
+};
+
+firebase.initializeApp(config)
 
 const App = () => {
 

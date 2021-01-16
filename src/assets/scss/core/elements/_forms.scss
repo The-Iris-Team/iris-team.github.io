@@ -112,7 +112,7 @@ textarea.form-input {
 	position: relative;
 
 	svg {
-		pointer-events: none;
+		pointer-events: cursor;
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
