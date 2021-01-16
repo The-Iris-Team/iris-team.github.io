@@ -124,7 +124,7 @@ const FeaturesSplit = ({
                   Improve the news ecosystem
                   </h3>
                 <p className="m-0">
-                On Iris, you can participate in detecting fake-news by cooperating with the community and promoting attentiveness. Express yourself and serve everyone while you share your opinion on the information promoted in published articles.
+                  On Iris, you can participate in detecting fake-news by cooperating with the community and promoting attentiveness. Express yourself and serve everyone while you share your opinion on the information promoted in published articles.
                 </p>
               </div>
               <div className={

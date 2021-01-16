@@ -45,10 +45,10 @@ const FeaturesTiles = ({
 
   const sectionHeader = {
     title: 'About Us',
-    paragraph: "We are a team of four international bachelor students in Computer Science Engineering at TU Delft." + 
-	" Our technical background allows us to use innovative and powerfull tools in order to solve our problem." + 
-	" In today's society, we are ones of the most concerned by this era of news media and fake news." + 
-	" We are determined, motivated, open-minded and we strongly believe that we can make a difference."
+    paragraph: "We are a team of four international students in Computer Science Engineering." + 
+	" Our technical background allows us to use innovative and powerful tools in order to solve modern problems." + 
+	" In today's society, we are concerned by this era of news media and fake news." + 
+	" We are determined, motivated and we strongly believe that we can make a difference."
   };
 
   return (

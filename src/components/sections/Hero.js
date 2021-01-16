@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
-import ScrollableAnchor from 'react-scrollable-anchor'
 import { SectionProps } from '../../utils/SectionProps';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
@@ -58,8 +57,7 @@ const Hero = ({
     >
       <div className="container-sm">
         <div className={innerClasses}>
-          <ScrollableAnchor id={'top'}>
-          <div className="hero-content">
+          <div id='top' className="hero-content">
             <h1 className="mt-0 mb-8 reveal-from-bottom" data-reveal-delay="200">
               <span className="text-color-primary">IRIS</span>
             </h1>
@@ -80,7 +78,6 @@ const Hero = ({
     </div>*/}
             </div>
           </div>
-          </ScrollableAnchor>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
             <a
               data-video="https://player.vimeo.com/video/415859099"

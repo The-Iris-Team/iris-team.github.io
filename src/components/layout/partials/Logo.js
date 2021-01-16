@@ -4,6 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Image from '../../elements/Image';
 import { goToTop } from 'react-scrollable-anchor'
 
+
 const Logo = ({
   className,
   ...props

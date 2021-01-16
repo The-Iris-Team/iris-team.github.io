@@ -1,5 +1,6 @@
 {
   "name": "open-react-template",
+  "homepage": "https://the-iris-team.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,15 +12,15 @@
     "react-dom": "^16.13.1",
     "react-ga": "^2.7.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.1",
-    "react-scrollable-anchor": "^0.6.1"
+    "react-scripts": "^3.4.1"
   },
-  "homepage": ".",
   "repository": {
     "type": "git",
     "url": "https://github.com/cruip/open-react-template.git"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,5 +41,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^3.0.0"
+  }
 }
