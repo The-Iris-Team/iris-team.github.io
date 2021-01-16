@@ -74,6 +74,10 @@ const Header = ({
     className
   );
 
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   return (
     <header
       {...props}
@@ -86,7 +90,9 @@ const Header = ({
             'site-header-inner',
             bottomDivider && 'has-bottom-divider'
           )}>
-          <Logo />
+          <div onClick={refreshPage}>
+            <Logo />  
+          </div>
           {!hideNav &&
             <>
               <button
