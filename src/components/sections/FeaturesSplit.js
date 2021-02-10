@@ -50,7 +50,7 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: 'What is Iris ?',
-    paragraph: 'Iris is a decentralized platform promoting the publication of reliable, fact-checked articles.'
+    paragraph: 'Iris is a decentralized platform promoting the publication of reliable and fact-checked articles. We are not here to dictate the truth but to give you the tools to forge your own opinion.'
   };
 
   return (
@@ -124,7 +124,7 @@ const FeaturesSplit = ({
                   Improve the news ecosystem
                   </h3>
                 <p className="m-0">
-                  On Iris, you can participate in detecting fake-news by cooperating with the community and promoting attentiveness. Express yourself and serve everyone while you share your opinion on the information promoted in published articles.
+                  Participate in detecting fake-news by cooperating with the community and promoting attentiveness. Express yourself and serve everyone while you share your opinion on the information promoted in published articles.
                 </p>
               </div>
               <div className={

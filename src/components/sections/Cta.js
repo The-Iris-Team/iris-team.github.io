@@ -4,7 +4,9 @@ import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import Input from '../elements/Input';
 import firebase from 'firebase/app';
-import 'firebase/firestore'
+import 'firebase/firestore';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 const propTypes = {
   ...SectionProps.types,
@@ -47,11 +49,17 @@ const Cta = ({
   var firestore = firebase.firestore();
   var validator = require("email-validator");
 
+  const MySwal = withReactContent(Swal)
+
   function call_data() { 
     console.log("mon ami");
     var txt = document.getElementById('newsletter').value;
     if (validate_email(txt)) {
       document.getElementById('newsletter').value = ''; //empty the cell because data 
+      MySwal.fire({
+        title: 'Confirmation',
+        footer: 'Your email has been successfully registrered',
+      });
       firestore.collection("emails").add({
         Email: txt
       }).then(function() {
@@ -61,6 +69,10 @@ const Cta = ({
       })
     } else {
       document.getElementById('newsletter').style.color = "red";
+      MySwal.fire({
+        title: 'Wrong Email Format',
+        footer: 'Your email has not been registrered!',
+      });
       console.log("The email you provided is not valid")
     }
   };
@@ -89,7 +101,6 @@ const Cta = ({
               (e) => {
                 var keycode = (e.keyCode ? e.keyCode : e.which);
                 if (document.getElementById('newsletter').style.color == "red") {
-                  console.log("voici");
                   document.getElementById('newsletter').style.color = "black";
                 }
                 if (keycode == '13') { 

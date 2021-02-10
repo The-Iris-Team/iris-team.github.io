@@ -45,9 +45,9 @@ const FeaturesTiles = ({
 
   const sectionHeader = {
     title: 'About Us',
-    paragraph: "We are a team of four international students in Computer Science Engineering." + 
-	" Our technical background allows us to use innovative and powerful tools in order to solve modern problems." + 
-	" In today's society, we are concerned by this era of news media and fake news." + 
+    paragraph: "Behind Iris, there is a team of five international students with a Computer Science Engineering background." + 
+	" We decided to combine innovative and powerful tools in order to overcome modern problems." + 
+	" In today's society, we are concerned by this era of fake-news and want to value the access to information." + 
 	" We are determined, motivated and we strongly believe that we can make a difference."
   };
 

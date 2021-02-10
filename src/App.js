@@ -20,14 +20,12 @@ const trackPage = page => {
 };
 
 const config = {
-  apiKey: "AIzaSyB12gx50PXPQqsveSyj6_9gBIyaB_HZi58",
-  authDomain: "iris-newsletter.firebaseapp.com",
-  databaseURL: "https://iris-newsletter-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "iris-newsletter",
-  storageBucket: "iris-newsletter.appspot.com",
-  messagingSenderId: "854798223584",
-  appId: "1:854798223584:web:90098b3cdc0b40da2da885",
-  measurementId: "G-4L7HKJG4FR"
+  apiKey: "AIzaSyAe_YwaY69DQIf06lp5UVyo98sxBW_-M7k",
+  authDomain: "iris-newsletter-database.firebaseapp.com",
+  projectId: "iris-newsletter-database",
+  storageBucket: "iris-newsletter-database.appspot.com",
+  messagingSenderId: "930487112851",
+  appId: "1:930487112851:web:de125027b1152345f0e966"
 };
 
 firebase.initializeApp(config)
