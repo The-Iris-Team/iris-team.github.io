@@ -47,7 +47,7 @@ const FooterSocial = ({
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/iris_media_off">
+          <a href="https://twitter.com/theirismove">
             <svg
               width="16"
               height="16"
