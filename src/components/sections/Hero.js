@@ -4,6 +4,8 @@ import { SectionProps } from '../../utils/SectionProps';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
 
+import image1 from './../../assets/images/video-placeholder.png';
+
 const propTypes = {
   ...SectionProps.types
 }
@@ -87,7 +89,7 @@ const Hero = ({
             >
               <Image
                 className="has-shadow"
-                src={require('./../../assets/images/video-placeholder.png')}
+                src={image1}
                 alt="Hero"
                 width={627}
                 height={352} />
