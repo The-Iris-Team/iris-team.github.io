@@ -406,8 +406,8 @@ textarea.form-input {
 		input {
 
 			&:checked {
-				background-color: color-bg(check-checked-inverse) !important;
-				border-color: color-bg(check-checked-inverse) !important;
+				background-color: color-bg(check-checked-inverse);
+				border-color: color-bg(check-checked-inverse);
 			}
 		}
 	}
