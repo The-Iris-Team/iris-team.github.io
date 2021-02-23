@@ -4,6 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Image from '../../elements/Image';
 import { goToTop } from 'react-scrollable-anchor'
 
+import image1 from './../../../assets/images/logo_1000.png';
 
 const Logo = ({
   className,
@@ -23,7 +24,7 @@ const Logo = ({
       <h1 className="m-0">
         <AnchorLink href="#top">
           <Image
-            src={require('./../../../assets/images/logo_1000.png')}
+            src={image1}
             alt="Open"
             width={64}
             height={64} />
